@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Log-In
+    </title>
+    <link href="/bootstrap-4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="hd"> William Fontanez Bank </h2>
+    </div>
+    <br>
+    <div class="navbar">
+        <div class="nav-link">
+            <input type="btn0" onclick="window.location.href='/pages/signup.html';" value="Sign-Up" />
+            <input type="btn1" onclick="window.location.href='/pages/index.html';" value="Log-Out" />
+        </div>
+    </div>
+
+    <div class="welcome">
+        <p> Welcome to your Online Account</p>
+        <div class="spacer50">
+            <form action="process" method="post">
+                <label class="label20" for="name">Account Balance: </label>
+                <input class="acc-bal" type='text'>
+
+            </form>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="deposit">
+        <p class="depo"> How much would you like to DEPOSIT today! </p>
+        <p class="depo"> How much would you like to WITHDRAW today! </p>
+    </div>
+
+
+    <form action="acc-bal" method="post" target="a">
+        <label class="label21" for="name">Deposit Amount: </label>
+        <input class="acc-dep" type='text' name="acc-dep"><br>
+        <input id="depo0" type="submit" value="Submit">
+    </form>
+
+    <form action="withdrawal" method="post">
+        <label class="label22" for="name">Withdraw Amount: </label>
+        <input class="acc-with" type='text' name="acc-with"><br>
+        <input id="with0" type="submit" value="Submit">
+    </form>
+
+    <!-- <div class="sub-btn">
+        <input id="save0" type="button" value="Submit">
+        <input id="save1" type="button" value="Submit">
+    </div> -->
+    <br>
+    <div class="spacer100"></div>
+    <br>
+
+
+</body>
+
+</html>
